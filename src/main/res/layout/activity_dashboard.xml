@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/dashbd"
+
+    tools:context=".Dashboard">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/layout1"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="70dp">
+
+
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:id="@+id/userperson"
+          android:background="@drawable/user1_50px" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userprofile"
+                android:text="Username"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wel"
+                android:text="Welcome!"
+                android:textColor="@color/white"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+
+
+                android:id="@+id/card"
+                app:cardBackgroundColor="#051E4A">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                   android:layout_gravity="center"
+
+                    android:id="@+id/calculator"
+
+                    android:layout_height="wrap_content">
+
+
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/calculator_50px"/>
+
+                    <TextView
+                        android:layout_width="76dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Calculator"
+                        android:textColor="#1BB0DE"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="10dp"
+                android:id="@+id/Timer"
+
+
+                app:cardBackgroundColor="#051E4A">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+
+                    android:layout_height="wrap_content">
+
+
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/time_50px"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#1BB0DE"
+                        android:text="Time"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/TodoList"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#051E4A"
+                app:cardCornerRadius="15dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+
+                    android:layout_height="wrap_content">
+
+
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/helping_hand_50px"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#1BB0DE"
+                        android:text="H_Link"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:lottie_rawRes="@raw/load"
+                android:visibility="gone"
+                android:id="@+id/process"
+                android:layout_marginTop="100dp"/>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="10dp"
+                android:id="@+id/Timer2"
+
+
+                app:cardBackgroundColor="#051E4A">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+
+                    android:layout_height="wrap_content">
+
+
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/tictaclogo"/>
+
+                    <TextView
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="TicTacToe"
+                        android:textColor="#1BB0DE"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                android:id="@+id/Timer3"
+                app:cardBackgroundColor="#051E4A">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+
+                    android:id="@+id/Notepad"
+
+                    android:layout_height="wrap_content">
+
+
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/notepad_70px"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#1BB0DE"
+                        android:text="NotePad"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="10dp"
+                android:id="@+id/Timer4"
+
+
+                app:cardBackgroundColor="#051E4A">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+
+                    android:layout_height="wrap_content">
+
+
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/about_50px"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#1BB0DE"
+                        android:text="About us"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

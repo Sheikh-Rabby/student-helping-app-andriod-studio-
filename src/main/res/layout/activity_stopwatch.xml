@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_stop"
+
+
+    android:layout_height="match_parent"
+    tools:context=".stopwatch">
+
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="0 : 00 : 00"
+      android:textStyle="bold"
+      android:textSize="50sp"
+      android:textColor="#3F51B5"
+      android:id="@+id/time"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:lottie_rawRes="@raw/clock1"
+        app:lottie_loop="true"
+
+
+        android:id="@+id/clock"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="55dp"
+        android:layout_height="50dp"
+            android:layout_marginRight="40dp"
+            android:onClick="onClickstart"
+        android:src="@drawable/play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+
+       <ImageView
+           android:layout_width="50dp"
+           android:layout_marginRight="50dp"
+           android:layout_height="50dp"
+           android:onClick="onClickstop"
+           android:src="@drawable/stop"
+
+           />
+
+        <ImageView
+
+        android:layout_width="50dp"
+
+        android:layout_height="50dp"
+        android:onClick="onClickReset"
+        android:src="@drawable/restart_50px" />
+
+
+</LinearLayout>
+</LinearLayout>
+

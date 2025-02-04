@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/login_bg"
+    tools:context=".Register">
+
+    <TextView
+        android:text="Register"
+        android:gravity="center"
+
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        android:layout_width="300dp"
+        android:layout_marginTop="5dp"
+        app:helperText="Required*"
+        app:helperTextTextColor="#CD1212"
+
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="3dp"
+            android:hint="Username"
+            android:backgroundTint="#CACACA"
+            android:textColor="@color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        android:layout_width="300dp"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        app:helperText="Required*"
+        app:helperTextTextColor="#CD1212"
+
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="3dp"
+            android:backgroundTint="#CACACA"
+            android:textColor="@color/white"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+     android:layout_marginTop="5dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        app:helperText="Required*"
+        app:helperTextTextColor="#CD1212"
+        app:boxCornerRadiusTopStart="20dp"
+       
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="3dp"
+            android:inputType="textPassword"
+            android:backgroundTint="#CACACA"
+            android:textColor="@color/white"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:background="@drawable/custom_button"
+       android:layout_marginTop="20dp"
+       android:id="@+id/signup"
+       android:textColor="#ffff"
+
+
+       android:text="Register"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:lottie_rawRes="@raw/load"
+        app:lottie_autoPlay="true"
+        android:id="@+id/reload"
+        android:visibility="gone"/>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have Account?"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login!"
+        android:id="@+id/LoginNow"
+        android:textColor="#00BCD4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

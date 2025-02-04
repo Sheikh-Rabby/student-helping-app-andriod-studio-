@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">S_Help</string>
+    <string name="Link">
+
+        Click <a href="https://w3schools.com">here</a> to open w3schools.
+    </string>
+    <string name="Link1">
+
+        Click <a href="https://scholar.google.com">here</a> to open google scholar.
+    </string>
+    <string name="Link2">
+
+        Click <a href="https://chat.openai.com">here</a> to open ChatGpt.
+    </string>
+    <string name="Link3">
+
+        Click <a href="https://sci-hub.se">here</a> to open Sci-Hub.
+    </string>
+</resources>
